@@ -1,0 +1,80 @@
+package javaapplication7;
+
+public class JavaApplication7 {
+
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+
+    float peso, altura, imc;
+    char tipo;
+    
+    System.out.print("Digite o tipo da pessoa (M, F, I): ")
+    tipo = input.nextLine().charAt(0);
+    System.out.print("Digite sua altura: ");
+    altura = Float.valueOf(input.nextLine());
+    System.out.print("Digite seu peso: ");
+    peso = Float.valueoOf(Input.nextLine());
+
+    imc= peso/(altura*altura);
+    
+    if(tipo'M'||tipo=='m'){
+        if(imc<20){
+            System.out.println("Você está magro.");
+        }
+            else{
+                if(imc<25){
+                 System.out.println("Você está normal.");
+                }
+                else{
+                    if(imc<=30){
+                        System.out.println("Você está sobrepeso.");
+                    }
+                    else{
+                        System.out.println("Você está obseo.");
+                        }
+                }
+            }
+        }
+    else{
+         if(tipo'F'||tipo=='f'){
+             if(imc<19){
+                System.out.println("Você está magro.");
+              }
+         else{
+             if(imc<24){
+                 System.out.println("Você está normal.");
+             }
+                else{
+                    if(imc<=29){
+                        System.out.println("Você está sobrepeso.");
+                     }
+                    else{
+                         System.out.println("Você está obseo.");
+                        }
+                  }
+               }
+            }
+        
+        else{
+            if(imc<17){
+                System.out.println("Você está magro.");
+                }
+            else{
+                if(imc<22){
+                    System.out.println("Você está normal.");
+                    }
+                else{
+                     if(imc<=27){
+                        System.out.println("Você está sobrepeso.");
+                        }
+                else{
+                        System.out.println("Você está obseo.");
+
+                        }
+                      }
+                    }
+                }
+            }
+        }
+
+    }
